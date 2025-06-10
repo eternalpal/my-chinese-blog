@@ -4,7 +4,7 @@
 
 # ！！！非常重要：部署后务必将下面的 "/" 替换为你的 Vercel 域名
 # 例如 "https://my-cool-blog.vercel.app/"
-baseURL = "/"
+baseURL = "https://my-chinese-blog.vercel.app/"
 languageCode = "zh-cn"
 title = "我的GitHub项目周刊"
 theme = "PaperMod"
