@@ -1,2 +1,10 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Hugo
+/public/
+/resources/
+
+# OS
+.DS_Store
+Thumbs.db
