@@ -1,0 +1,75 @@
+# =================================================
+# Hugo PaperMod 纯中文入门模板 (保证成功版)
+# =================================================
+
+# ！！！非常重要：部署后务必将下面的 "/" 替换为你的 Vercel 域名
+# 例如 "https://my-cool-blog.vercel.app/"
+baseURL = "/"
+languageCode = "zh-cn"
+title = "我的GitHub项目周刊"
+theme = "PaperMod"
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+# --- 菜单配置 ---
+# Hugo 会自动为这些相对路径添加正确的链接，无需任何手动修改
+[[menu.main]]
+  identifier = "archives"
+  name = "归档"
+  url = "/archives/"
+  weight = 10
+[[menu.main]]
+  identifier = "search"
+  name = "搜索"
+  url = "/search/"
+  weight = 20
+[[menu.main]]
+  identifier = "tags"
+  name = "标签"
+  url = "/tags/"
+  weight = 30
+[[menu.main]]
+  identifier = "about"
+  name = "关于我"
+  url = "/about/"
+  weight = 40
+
+# --- 全局参数配置 ---
+[params]
+  author = "你的名字"
+  description = "每周以图文的方式记录一些不错的Github项目"
+  defaultTheme = "auto" # auto, dark, light
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  
+  
+  # --- Home-Info Mode 的配置 ---
+  [params.homeInfoParams]
+    Title = "👋 欢迎来到我的周刊"
+    Content = "你好，这里是我记录和分享 GitHub 上有趣项目的地方。希望我的内容能给你带来一些启发和帮助！"
+  
+  # 个人主页模式配置
+  [params.profileMode]
+    enabled = false
+    title = "我的GitHub项目周刊"
+    subtitle = "每周以图文的方式记录一些不错的Github项目"
+    # 头像图片路径，请将你的头像图片放在 static/images/ 目录下
+    # imageUrl = "/images/avatar.png" 
+    # imageWidth = 120
+    # imageHeight = 120
+    
+    [[params.profileMode.buttons]]
+      name = "所有文章"
+      url = "/posts"
+    [[params.profileMode.buttons]]
+      name = "关于我"
+      url = "/about"
+
+# --- 输出配置 (为了让搜索等功能正常工作) ---
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
